@@ -80,6 +80,30 @@ header nav ul li a{
     top: -81px;
 }
 /*SECTION 2*/
+.articles .owl-stage .owl-item{
+    display: flex;
+    justify-content: center;
+}
+.articles .owl-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+.articles .owl-dots span{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: transparent;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+.articles .owl-dots .active span{
+    background-color: #000000;
+    scale: 120%;
+    transition-duration: 0.5s;
+}
 .our_guides{
     padding: 60px 0 248px;
 }
@@ -130,6 +154,8 @@ header nav ul li a{
 }
 .articles img{
     margin-bottom: 27px;
+    width: 100%;
+    display: block;
 }
 .articles p{
     font-weight: 700;
