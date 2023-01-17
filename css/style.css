@@ -171,3 +171,98 @@ header nav ul li a{
     cursor: pointer;
     text-decoration-line: underline;
 }
+
+
+
+.features{
+    padding: 190px 0 290px;
+    text-align: center;
+}
+.features h4{
+    font: 400 36px/42px 'Roboto', sans-serif;
+    color: #000000;
+    margin-bottom: 69px;
+}
+.features h5{
+    font: 700 36px/42px 'Roboto', sans-serif;
+    color: #000000;
+}
+.features .items_description{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 55px 0;
+}
+.features .items_description .item{
+    width: 33%;
+    font: 700 30px/35px 'Roboto', sans-serif;
+    color: #000000;
+}
+.features .items_description .item:before{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 26px;
+    background: #21F7EC;
+}
+.features .items_description .item:nth-child(2):before{
+    background-color: #33D3BC;
+}
+.features .items_description .item:nth-child(3):before{
+    background-color: #18A5C6;
+}
+.features .items_description:last-of-type .item:first-of-type:before{
+    background-color: #D38F62;
+}
+.features .items_description:last-of-type .item:nth-child(2):before{
+    background-color: #F94C43;
+}
+.features .items_description:last-of-type .item:nth-child(3):before{
+    background-color: #D399FF;
+}
+#accordion{
+    margin-bottom: 52px;
+}
+.ui-widget-content{
+    border: none;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+    border: none;
+    background-color: transparent;
+    color: black;
+
+}
+.ui-icon{
+    background-image: none;
+    width: auto;
+    height: auto;
+    text-indent: 0;
+    overflow: auto;
+}
+.ui-icon:before {
+    content: "\f054";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    font-size: 45px;
+}
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon, .ui-state-active .ui-icon, .ui-button:active .ui-icon{
+    background-image: none;
+}
+.ui-accordion .ui-accordion-header.ui-state-active{
+    display: block;
+}
+.ui-state-active .ui-icon:before {
+    content: "\f054";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    font-size: 45px;
+}
+.ui-state-active .ui-icon{
+    transition: 0.3s;
+    transform: rotate(90deg);
+    display: inline-block;
+}
