@@ -4,13 +4,18 @@
 $mainFont: 'Roboto', sans-serif;
 $blackColor: #000000;
 
-@mixin theme($theme: DarkGray) {
-  background: $theme;
-  box-shadow: 0 0 1px rgba($theme, .25);
-  color: #fff;
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
 }
 
 
+.btn{
+  padding: 20px 10px;
+  cursor: pointer;
+  color: #1C1B1B;
+}
 *{
   padding: 0; margin: 0; font-family: 'Roboto', sans-serif;
 }
@@ -153,9 +158,9 @@ header{
     font-style: normal;
     text-align: center;
     color: $blackColor;
-  }
-  article:last-child{
-    margin-right: 0;
+    &:last-child{
+      margin-right: 0;
+    }
   }
 }
 .our_guides{
@@ -214,6 +219,12 @@ header{
       width: 33%;
       font: 700 30px/35px $mainFont;
       color: $blackColor;
+      @include max-screen(767px){
+        width: 50%;
+      }
+      @include max-screen(500px){
+        width: 100%;
+      }
     }
     .item:before{
       content: '';

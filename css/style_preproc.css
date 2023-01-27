@@ -1,5 +1,11 @@
 @import "media.css";
 @import "style.css";
+.btn {
+  padding: 20px 10px;
+  cursor: pointer;
+  color: #1C1B1B;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -209,6 +215,16 @@ header nav ul li a {
   width: 33%;
   font: 700 30px/35px "Roboto", sans-serif;
   color: #000000;
+}
+@media screen and (max-width: 767px) {
+  .features .items_description .item {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .features .items_description .item {
+    width: 100%;
+  }
 }
 .features .items_description .item:before {
   content: "";
